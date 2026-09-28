@@ -1,0 +1,92 @@
+* {
+
+    font-family:    "JetBrainsMonoNL Nerd Font Mono";
+    font-size:      13px;
+
+}
+
+.retroBar {
+
+    background:                     #ccc;
+
+    border-top:         solid   1px #fff;
+    border-left:        solid   1px #fff;
+    border-bottom:      solid   2px #222;
+    border-right:       solid   2px #222;
+
+}
+
+#workspaces button {
+
+    margin:                     4px;
+    padding:                    0px;
+
+    background:                     #ddd;
+
+    border-top:         solid   1px #fff;
+    border-left:        solid   1px #fff;
+    border-bottom:      solid   2px #777;
+    border-right:       solid   2px #777;
+
+    border-radius:              0px;
+
+}
+
+#workspaces button:hover{
+
+    text-shadow:                1px 1px 1px #fff;
+    
+    box-shadow: none;
+    transition: none;
+}
+
+ #pulseaudio, #network, #window {
+
+    padding:                    0px 2px;
+    margin:                     4px;
+
+    background:                     #dcdcdc;
+
+    border-top:         solid   1px #fff;
+    border-left:        solid   1px #fff;
+    border-bottom:      solid   2px #777;
+    border-right:       solid   2px #777;
+
+}
+
+#clock {
+
+    margin:                     4px 4px 4px 5px;
+    padding:                    0px 3px;
+    background:                     #ddd;
+
+    border-top:         solid   1px #fff;
+    border-left:        solid   1px #fff;
+    border-bottom:      solid   2px #777;
+    border-right:       solid   2px #777;
+
+}
+
+#custom-os_button{
+
+    margin:                     4px 5px 4px 4px;
+    padding:                    0px 3px;
+    background:                     #ddd;
+
+    border-top:         solid   1px #fff;
+    border-left:        solid   1px #fff;
+    border-bottom:      solid   2px #777;
+    border-right:       solid   2px #777;
+
+}
+
+#clock:hover, #pulseaudio:hover, #network:hover, #window:hover, #custom-os_button:hover {
+
+    border-top:         solid   2px #999;
+    border-left:        solid   2px #999;
+    border-bottom:      solid   2px #fff;
+    border-right:       solid   2px #fff;
+
+    text-shadow:                1px 1px 1px #fff;
+
+}

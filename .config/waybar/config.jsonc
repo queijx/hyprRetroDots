@@ -1,0 +1,90 @@
+{
+    "name":             "retroBar",
+    "layer":            "top",
+    "position":         "bottom",
+    "height":           "30",
+    "width":            "0",
+    "spacing":          "0",
+    "margin":           "0 5 5 5",
+
+    // Module Set
+
+    "modules-left": [
+
+        "clock",
+        "pulseaudio",
+        "network",
+        "hyprland/window"
+    
+    ],
+
+    "modules-center": [],
+
+    "modules-right": [
+        "hyprland/workspaces",
+        "custom/os_button"
+    ],
+
+    // Modules Config
+
+    "clock": {
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "format-alt": "{:%Y-%m-d%}"
+    },
+
+    "pulseaudio": {
+
+        "format": "{volume}% {icon}",
+        "format-bluetooth": "{volume}% {icon} {format_source}",
+        "format-bluetooth-muted": "󰅶 {icon} {format_source}",
+        "format-muted": "󰅶 {format_source}",
+        "format-source": "{volume}% ",
+        "format-source-muted": "",
+        "format-icons": {
+
+            "headphone": "",
+            "hands-free": "󰂑",
+            "headset": "󰂑",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", "", ""]
+
+        },
+
+        "on-click": "pavucontrol",
+
+        "scroll-step": 1
+    },
+
+    "network": {
+
+        "format-wifi": "{essid} ({signalStrength}%) ",
+        "format-ethernet": "{ipaddr}/{cidr} 󰊗",
+        "tooltip-format": "{ifname} via {gwaddr} 󰊗",
+        "format-linked": "{ifname} (No IP) 󰊗",
+        "format-disconnected": "Disconnected ⚠",
+        "format-alt": "{ifname}: {ipaddr}/{cidr}"
+
+    },
+
+    "hyprland/workspaces": {
+
+        "window-rewrite-default": "",
+        "window-rewrite": {
+
+            "app_id<brave>": "",
+            "app_id<yazi>": "",
+            "app_id<kitty>": ""
+
+        }
+    },
+
+    "custom/os_button": {
+
+        "format":   "Start ",
+        "on-click": "wofi --show drun"
+        
+    }
+
+}

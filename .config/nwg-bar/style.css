@@ -1,0 +1,64 @@
+window {
+
+	background: 		#ddd;
+	
+	border-top:         solid   1px #fff;
+    border-left:        solid   1px #fff;
+    border-bottom:      solid   2px #222;
+    border-right:       solid   2px #222;
+
+}
+
+#outer-box {
+
+	margin: 0px
+
+}
+
+#inner-box {
+
+	margin: 		5px;
+	padding: 		5px;
+
+	border-top:         solid   2px #999;
+    border-left:        solid   2px #999;
+    border-bottom:      solid   2px #fff;
+    border-right:       solid   2px #fff;
+	
+	border-radius: 	0px;
+
+}
+
+button, image {
+
+	background: none;
+	border: none;
+	box-shadow: none
+
+}
+
+button {
+
+	margin: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+
+	border-top:         solid   1px #fff;
+    border-left:        solid   1px #fff;
+    border-bottom:      solid   2px #777;
+    border-right:       solid   2px #777;
+
+	border-radius: 				0px;
+
+}
+
+button:hover, button:focus {
+
+	border-top:         solid   2px #999;
+    border-left:        solid   2px #999;
+    border-bottom:      solid   2px #fff;
+    border-right:       solid   2px #fff;
+
+	border-radius: 				0px;
+
+}
