@@ -26,11 +26,15 @@ hl.bind(mainMod .. " + right", hl.dsp.focus({ direction = "right" }))
 hl.bind(mainMod .. " + up",    hl.dsp.focus({ direction = "up" }))
 hl.bind(mainMod .. " + down",  hl.dsp.focus({ direction = "down" }))
 
-hl.bind(mainMod .. " + SHIFT + left",  hl.dsp.window.move({ direction = "left" }))
-hl.bind(mainMod .. " + SHIFT + right", hl.dsp.window.move({ direction = "right" }))
-hl.bind(mainMod .. " + SHIFT + up",    hl.dsp.window.move({ direction = "up" }))
-hl.bind(mainMod .. " + SHIFT + down",  hl.dsp.window.move({ direction = "down" }))
+hl.bind(mainMod .. " + CONTROL + left",  hl.dsp.window.move({ direction = "left" }))
+hl.bind(mainMod .. " + CONTROL + right", hl.dsp.window.move({ direction = "right" }))
+hl.bind(mainMod .. " + CONTROL + up",    hl.dsp.window.move({ direction = "up" }))
+hl.bind(mainMod .. " + CONTROL + down",  hl.dsp.window.move({ direction = "down" }))
 
+hl.bind(mainMod .. " + ALT + right", hl.dsp.window.resize({ x = 50, y = 0, relative = true }), { repeating = true })
+hl.bind(mainMod .. " + ALT + left",  hl.dsp.window.resize({ x = -50, y = 0, relative = true}), { repeating = true })
+hl.bind(mainMod .. " + ALT + up",    hl.dsp.window.resize({ x = 0, y = 50, relative = true}), { repeating = true })
+hl.bind(mainMod .. " + ALT + down",  hl.dsp.window.resize({ x = 0, y = -50, relative = true}), { repeating = true })
 
 
 for i = 1, 10 do
